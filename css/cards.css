@@ -1,5 +1,5 @@
 /* Estilos para desktop */
-@import '/css/mianstyles.css';
+@import 'css/mianstyles.css';
 
 .main-section {
     display: flex;
