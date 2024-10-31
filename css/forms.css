@@ -24,10 +24,7 @@
     align-items:center!important;
     margin-block:20px;
 }
-.first{
-    border:none!important;
-    border-bottom: 0.125rem solid var(--color-hoverlinks)!important;
-}
+
 
 .profile-picture {
     display: flex;
@@ -70,17 +67,12 @@
     border: none;
 }
 
-.input-group:second-child {
-    border: none;
 
-}
 
 
 .reg {
 
     padding-bottom: 20px;
-
-
 
 }
 
