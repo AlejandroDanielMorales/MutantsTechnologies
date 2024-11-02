@@ -1,14 +1,10 @@
-/* Estilos para desktop */
 @import 'css/mianstyles.css';
 
 .main-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
-
-
 
 .card {
     display: flex;
@@ -53,7 +49,6 @@
     font-size: 15px;
 }
 
-
 .backdiv {
     display: flex;
     justify-content: center;
@@ -81,16 +76,14 @@ a {
 .card-btn {
     height: auto;
     max-width: 100%;
-
     padding: 5px;
-    background: linear-gradient(90deg, #5F7ADB, #A2B2EE);
+    background: linear-gradient(90deg, var(--color-hoverlinks),var(--color-text));
     color: #26292B;
     border: none;
     border-radius: 10px;
     font-weight: bold;
     font-size: 10px;
     line-height: 10px;
-
     transition: transform 0.5s ease;
 }
 
@@ -103,11 +96,8 @@ a {
     transition: transform 0.3s ease;
 
     &:hover {
-
-
         .card {
             background: linear-gradient(190deg, #A2B2EE, #5F7ADB);
-
             em {
                 color: var(--color-principal) !important;
             }
@@ -125,13 +115,12 @@ a {
 
 .card-btn:hover {
     transform: scale(1.2);
-    background: linear-gradient(90deg, #A2B2EE, #5F7ADB);
+    background: linear-gradient(90deg, var(--color-text),var(--color-hoverlinks));
 }
 
 @media screen and (max-width: 780px) {
 
-    .card-background {
-
+    .card-background { 
         max-width: 48%;
         margin-block: 10px;
     }
