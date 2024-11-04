@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..700;1,100..700&amp;display=swap"
+        rel="stylesheet" class="">
+    <link rel="stylesheet" href="css/mianstyles.css">
+    <link rel="stylesheet" href="css/tables.css">
+    <title>Mutants Technoligies</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <input class="chkburger" type="checkbox" id="burger-menu">
+        <label class="nav-button" for="burger-menu">
+            <i class="fas fa-bars"></i>
+        </label>
+        <nav class="main-navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="pages/index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/contact.html">
+                        Contacto
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/productsAdmin.html">
+                        Adm. Productos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/userAdmin.html">
+                        Adm. usuarios
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/registrar.html">
+                        Registrarse
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-info">
+            <div class="cart-container">
+                <a href="pages/cart.html" class="enlace-div">
+                <i class="fas fa-shopping-cart" id="shop-cart"></i>
+                </a>
+            </div>
+            <div class="user-container">
+                 <img src="assets/images/profile.jfif" alt="profile-picture" >
+            </div>
+        </div>
+    </header>
+          
+    <section class="table-head ">
+        <h2>Catálogo de Productos</h2>
+        <div class="search-bar">
+            <div class="search-container">
+                <input class="search-box" type="text" placeholder="Buscar productos..." aria-label="Buscar productos">
+                <button class="btn-search"><i class="fas fa-search"></i></button>
+            </div>
+            <button class="card-btn">Agregar producto</button>
+            <button class="card-btn">Agregar categoria</button>
+        </div>
+    </section>
+    
+
+
+
+    <main class="main-container"> 
+        <div class="table-container">
+            <table cellpadding="10" cellspacing="0" class="table-products usrtbl">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="cell-image"><img class="table-img" src="assets/images/productos/procesadores/prc1.png" alt="AMD Ryzen 9 9900X"></td>
+                        <td>Procesador AMD Ryzen 9 9900X</td>
+                        <td>Poderoso procesador con alto rendimiento para tareas avanzadas.</td>
+                        <td>$499</td>
+                        <td class="tool-cell tcp">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image" ><img class="table-img" src="assets/images/productos/procesadores/prc2.png" alt="Intel Core i9-13900KF"></td>
+                        <td>Procesador Intel Core i9-13900KF</td>
+                        <td>Procesador Intel de última generación con gran potencia.</td>
+                        <td>$579</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image" ><img class="table-img" src="assets/images/productos/procesadores/pcr3.png" alt="Intel Core i3-10105F"></td>
+                        <td>Procesador Intel Core i3-10105F</td>
+                        <td>Procesador económico ideal para tareas de oficina y hogar.</td>
+                        <td>$125</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image" ><img class="table-img" src="assets/images/productos/procesadores/prc4.png" alt="AMD Ryzen 7 5700G"></td>
+                        <td>Procesador AMD Ryzen 7 5700G</td>
+                        <td>Procesador AMD con gráficos integrados para multitarea y gaming casual.</td>
+                        <td>$309</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image"  ><img class="table-img" src="assets/images/productos/memoriasRam/mr1-removebg-preview.png" alt="XPG SPECTRIX D41 RGB"></td>
+                        <td>Memoria RAM XPG SPECTRIX D41 RGB 16GB</td>
+                        <td>Memoria DDR4 de 3200MHz con iluminación RGB.</td>
+                        <td>$75</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image" ><img class="table-img" src="assets/images/productos/memoriasRam/mr2-removebg-preview.png" alt="HP 7EH68AA"></td>
+                        <td>Memoria RAM HP 7EH68AA 16GB</td>
+                        <td>Memoria HP DDR4 confiable y de alto rendimiento.</td>
+                        <td>$69</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image" ><img class="table-img" src="assets/images/productos/memoriasRam/mr3-removebg-preview.png" alt="XPG Spectrix D50"></td>
+                        <td>Memoria RAM XPG Spectrix D50 32GB</td>
+                        <td>Memoria DDR4 de alta capacidad para tareas intensivas.</td>
+                        <td>$150</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image" ><img class="table-img" src="assets/images/productos/memoriasRam/mr4-removebg-preview.png" alt="T-Force Delta RGB"></td>
+                        <td>Memoria RAM Team Group T-Force Delta RGB 32GB</td>
+                        <td>Memoria con iluminación RGB y rendimiento optimizado para gaming.</td>
+                        <td>$145</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image" ><img class="table-img" src="assets/images/productos/tarjetasGraficas/tj1.avif" alt="MSI GeForce GTX 1070"></td>
+                        <td>Tarjeta Gráfica MSI GeForce GTX 1070</td>
+                        <td>Gráfica de alto rendimiento para gaming a 1080p.</td>
+                        <td>$299</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image"  ><img class="table-img" src="assets/images/productos/tarjetasGraficas/tj2.png" alt="NVIDIA GeForce RTX 3060 Ti"></td>
+                        <td>Tarjeta Gráfica NVIDIA GeForce RTX 3060 Ti</td>
+                        <td>Gráfica potente para gaming y creación de contenido en 4K.</td>
+                        <td>$499</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image"  ><img class="table-img" src="assets/images/productos/procesadores/prc2.png" alt="Intel Core i9-13900KF"></td>
+                        <td>Procesador Intel Core i9-13900KF</td>
+                        <td>Procesador Intel de última generación con gran potencia.</td>
+                        <td>$579</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image"  ><img class="table-img" src="assets/images/productos/procesadores/prc3.png" alt="Intel Core i3-10105F"></td>
+                        <td>Procesador Intel Core i3-10105F</td>
+                        <td>Procesador económico ideal para tareas de oficina y hogar.</td>
+                        <td>$125</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image"  ><img class="table-img" src="assets/images/productos/procesadores/prc4.png" alt="AMD Ryzen 7 5700G"></td>
+                        <td>Procesador AMD Ryzen 7 5700G</td>
+                        <td>Procesador AMD con gráficos integrados para multitarea y gaming casual.</td>
+                        <td>$309</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image"  ><img class="table-img" src="assets/images/productos/memoriasRam/mr1-removebg-preview.png" alt="XPG SPECTRIX D41 RGB"></td>
+                        <td>Memoria RAM XPG SPECTRIX D41 RGB 16GB</td>
+                        <td>Memoria DDR4 de 3200MHz con iluminación RGB.</td>
+                        <td>$75</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image"  ><img class="table-img" src="assets/images/productos/memoriasRam/mr2-removebg-preview.png" alt="HP 7EH68AA"></td>
+                        <td>Memoria RAM HP 7EH68AA 16GB</td>
+                        <td>Memoria HP DDR4 confiable y de alto rendimiento.</td>
+                        <td>$69</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image"  ><img class="table-img" src="assets/images/productos/memoriasRam/mr3-removebg-preview.png" alt="XPG Spectrix D50"></td>
+                        <td>Memoria RAM XPG Spectrix D50 32GB</td>
+                        <td>Memoria DDR4 de alta capacidad para tareas intensivas.</td>
+                        <td>$150</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image"  ><img class="table-img" src="assets/images/productos/memoriasRam/mr4-removebg-preview.png" alt="T-Force Delta RGB"></td>
+                        <td>Memoria RAM Team Group T-Force Delta RGB 32GB</td>
+                        <td>Memoria con iluminación RGB y rendimiento optimizado para gaming.</td>
+                        <td>$145</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image" ><img class="table-img" src="assets/images/productos/tarjetasGraficas/tj1.avif" alt="MSI GeForce GTX 1070"></td>
+                        <td>Tarjeta Gráfica MSI GeForce GTX 1070</td>
+                        <td>Gráfica de alto rendimiento para gaming a 1080p.</td>
+                        <td>$299</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-image"  ><img class="table-img" src="assets/images/productos/tarjetasGraficas/tj2.png" alt="NVIDIA GeForce RTX 3060 Ti"></td>
+                        <td>Tarjeta Gráfica NVIDIA GeForce RTX 3060 Ti</td>
+                        <td>Gráfica potente para gaming y creación de contenido en 4K.</td>
+                        <td>$499</td>
+                        <td class="tool-cell">
+                            <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Email: contacto@corralonUTN.com</p>
+            <p>Teléfono: +54 11 1234-5678</p>
+        </div>
+        <div class="footer-section">
+            <h3>Redes Sociales</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Ubicación</h3>
+            <p>Av. Siempre Viva 123, Buenos Aires, Argentina</p>
+        </div>
+    </footer>
+</body>
+
+</html>
