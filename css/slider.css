@@ -1,10 +1,10 @@
+@import '/css/mianstyles.css';
 
-@import 'mianstyles.css';
 .main-banner {
     width: 100%;
-    height: 50dvh;
+    height: 38dvh;
     min-height:25dvh;
-    background-color: black;
+    background-color: var(--color-terciario);
     overflow: hidden;
     position: relative;
 }
@@ -14,12 +14,12 @@
     flex-direction: column;
     justify-content: center;    
     width:100dvw;
-    bottom: 10dvh;
-    top:10dvh;
+    bottom: 8dvh;
+    top:20dvh;
     padding-right:10px ;
     right: 0;
     text-align: right;
-    background:linear-gradient(to right ,transparent -100%,var(--color-principal)80%);
+    background:linear-gradient(to right ,transparent -100%,var(--color-terciario)80%);
 
     h1{
         font-size:30px;
@@ -64,7 +64,6 @@
         width: 100%;
         height: 90dvh;
         min-height:25dvh;
-        background-color: black;
     }
 
     .tittle-container{
@@ -75,11 +74,10 @@
         width:100dvw;
         bottom: 10dvh;
         top:50dvh;
-        padding-right:10px ;
+        padding-right:10dvw;
         right: 0;
         text-align: right;
-        background:linear-gradient(to right ,transparent 30%,var(--color-secundario)70%);
-
+        
         h1{
             font-size:40px;
             color:var(--color-hoverlinks);
